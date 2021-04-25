@@ -1,0 +1,734 @@
+
+*, ::before, ::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: 'roboto', sans-serif;
+    
+}
+
+
+        
+
+
+                        
+                        
+                        
+                        /* HEADER */
+
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+header i {
+
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #000;
+
+}
+
+
+
+
+header img {
+
+    
+    padding: 15px 30px 15px 0;
+    width: 180px;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+                /* MENU A LA FRANCAISE */
+
+
+#couverture {
+
+    background: #f2f2f2;
+}
+
+
+
+#couverture img {
+    
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+
+.menu_title_container  {
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 30px 30px 0px 0px;
+    margin-right: -19.5px;
+    background: #f2f2f2;
+    
+}
+
+
+
+.france h1 {
+
+    display: flex;
+    align-items: center;
+    font-family: 'shrikhand';
+    padding: 20px 15px 0 20px;
+    
+}
+
+
+h1 {
+
+    font-size: 24px;
+
+}
+
+
+
+.menu_title_icon {
+
+    margin-top: 25px;
+    color: grey;
+    
+}
+
+
+.menu_title_icon i {
+
+    font-size: 25px;
+    padding: 25px 25px 0px 0px;
+    cursor: pointer;
+}
+
+
+
+.menu_title_icon i:hover {
+
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+i {
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+.menu_title_icon:hover i {
+
+    font-weight: bold;
+    
+}
+
+.menu_title_icon:hover {
+
+    background: -webkit-linear-gradient(#9356dc, #fa79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+}
+
+
+
+
+                        /* MENU */
+
+
+.couverture {
+
+    z-index: -1;
+    height: 400px;
+
+}
+
+
+.couverture img {
+
+    z-index: -1;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    
+
+}
+
+
+.container .coeur i {
+
+    color: grey;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+    
+}
+
+
+
+.container .coeur i:hover {
+
+    opacity: 1;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#9356dc, #fa79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+
+
+.container {
+
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    margin-top: -50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+
+.container section {
+
+    width: 100%;
+    
+}
+
+
+h1 {
+  
+    font-family: 'shrikhand';
+    font-size: 25px;
+    
+  }
+
+
+  
+h2 {
+
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 30px;
+
+}
+
+
+
+.green_border {
+
+    border-bottom: solid #8ff3da;
+    width: 38px;
+    padding-bottom: 3px;
+}
+
+
+
+
+/* UNIQUEMENT "POUR LA NOTE ENCHANTEE" */
+
+.green_border:nth-child(6) {
+
+    margin-top: 40px;
+
+}
+
+
+.green_border:nth-child(10) {
+
+    margin-top: 40px;
+
+}
+
+
+
+
+
+
+
+/* POUR TOUTES LES PAGES */
+
+
+
+.description {
+
+    
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 23px 5px -20px rgba(0,0,0,0.20);
+    margin-left: -6px;
+    transition: .5s;
+    animation: deroule 3s forwards;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+    
+}
+
+
+@keyframes deroule {
+    
+    0% {
+
+        transform: translateY(-10px);
+        opacity: 0;
+
+    }
+
+
+    100% {
+
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+
+
+} 
+
+
+
+/* ENTRÉE */
+
+.description:nth-child(2) {
+
+    animation-delay: 0.5s;
+
+}
+
+
+.description:nth-child(3) {
+
+    animation-delay: 1.0s;
+
+}
+
+
+.description:nth-child(4) {
+
+    animation-delay: 1.5s;
+
+}
+
+
+
+/* LA NOTE ENCHANTÉE */
+
+
+.description:nth-child(5) {
+
+    animation-delay: 1.8s;
+
+}
+
+
+
+
+
+/* PLATS */
+
+
+ 
+.description:nth-child(6) {
+
+    animation-delay: 2s;
+
+}
+
+
+.description:nth-child(7) {
+
+    animation-delay: 2.5s;
+
+}
+
+.description:nth-child(8) {
+
+    animation-delay: 3s;
+
+}
+
+ 
+
+/* LA NOTE ENCHANTÉE */
+
+
+.description:nth-child(9) {
+
+    animation-delay: 3.4s;
+
+}
+
+ 
+
+
+
+
+/* DESSERTS */
+
+
+.description:nth-child(10) {
+
+    animation-delay: 3.5s;
+
+}
+
+
+.description:nth-child(11) {
+
+    animation-delay: 4s;
+
+}
+
+
+.description:nth-child(12) {
+
+    animation-delay: 4.5s;
+
+}
+
+
+
+
+/* LA NOTE ENCHANTÉE */
+
+
+.description:nth-child(13) {
+
+    animation-delay: 5s;
+
+}
+
+ 
+
+ 
+
+
+
+
+
+
+
+.plats {
+
+    width: 95%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+
+.plats span {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-top: 5px;
+    color: #404040;
+    
+
+}
+
+
+
+.animation {
+
+   
+    height: 70px;
+    display: flex;
+
+}
+
+
+
+
+.tarifs p {
+
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+.check {
+
+    color: #f2f2f2;
+    background: #99e2d0;
+    height: calc(100% + 2px);
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: -110px;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+.description:hover .check {
+
+    margin-right: 0;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+.check i {
+
+    font-size: 25px;
+    
+}
+
+
+
+
+@keyframes rotate {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+
+    100% {
+
+        transform: rotate(360deg);
+        
+    }
+
+
+}
+
+
+.description:hover .check .fas {
+
+    display: flex;
+    animation: rotate .4s linear forwards;
+    
+
+}
+
+
+
+
+.plats {   
+
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    
+}
+
+
+
+.plats span, .plats strong {
+
+    display: inline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+
+
+.bouton {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.btn {
+
+    padding: 17px 50px ;
+    border-radius: 50px;
+    margin: 50px 0 50px 0;
+    font-family: 'robot', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-image: linear-gradient(to top, #9834da, #a639e0, #b33fe5, #c045eb, #cd4bf0, #d64ff2, #de54f4, #e758f6, #ed5cf5, #f460f4, #f965f3, #ff69f2);
+    box-shadow: -1px 7px 5px -3px rgba(0,0,0,0.39);
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+
+
+.btn:hover {
+
+    transition: opacity 0.3s linear;
+    box-shadow: -1px 10px 10px -3px rgba(0,0,0,0.39);
+    opacity: 0.8;
+
+}
+
+
+
+
+
+
+
+
+
+                    /* FOOTER */
+
+
+
+footer {
+
+    background: #3f3e3e;
+    color: white;
+    
+}
+
+
+footer .fin {
+
+    padding: 30px;
+
+}
+
+
+footer img {
+
+    width: 100px;
+    filter: invert(100%);
+    
+    
+
+}
+
+
+.mentions {
+
+    margin-top: 20px;
+
+}
+
+
+.ustensils {
+
+    display: flex;
+
+}
+
+
+.ustensils p {
+
+    margin-left: 10px;
+
+}
+
+
+
+.partenaire {
+
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.partenaire p {
+
+    margin-left: 4px;
+
+}
+
+
+
+.legales span {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+
+
+
+.contact {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
